@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>semaforo duplo</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página principal</title>
+</head>
+<body>
+  <a href="index.html">principal</a>
+  <a href="Tinkercad.html">timkercad</a>
+  <a href="ARDUÍNO.html">Arduíno</a>
+  <a href="SEMAFOROduplo.html">semaforo duplo</a>
+  <a href="arduinopratica.html">arduíno na prática</a>
+  <a href="crescente.html">crescente</a>
+  <a href="decre.html">decrescente</a>
+  <a href="semduplodecre.html">decrescente</a>
+    <h1>SEMAFORO DUPLO</h1>
+    <br>
+    <img src="semaforo duplo.png" alt=""width= 350px>
+    <br>
+    <h2>Código C++ (Texto)</h2>
+    <br>
+    <pre>
+        {
+            pinMode(10, OUTPUT);
+            pinMode(8, OUTPUT);
+            pinMode(11, OUTPUT);
+            pinMode(12, OUTPUT);
+            pinMode(9, OUTPUT);
+            pinMode(13, OUTPUT);
+          }
+          
+          void loop()
+          {
+            digitalWrite(10, HIGH);
+            digitalWrite(8, LOW);
+            digitalWrite(11, HIGH);
+            digitalWrite(12, LOW);
+            delay(7000); // Wait for 7000 millisecond(s)
+            digitalWrite(10, LOW);
+            digitalWrite(9, HIGH);
+            digitalWrite(11, LOW);
+            digitalWrite(13, HIGH);
+            delay(2000); // Wait for 2000 millisecond(s)
+            digitalWrite(9, LOW);
+            digitalWrite(8, HIGH);
+            delay(7000); // Wait for 7000 millisecond(s)
+            digitalWrite(13, LOW);
+            digitalWrite(12, HIGH);
+            delay(2000); // Wait for 2000 millisecond(s)
+          }
+    </pre>
